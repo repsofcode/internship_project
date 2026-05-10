@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillForge | Practical IT Training & Career Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       TOP BAR
+  ══════════════════════════════════════ -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-left">
+        <a href="tel:+919579338436"><i class="fa fa-phone"></i> (+91) 9579338436</a>
+        <a href="mailto:contact@skillforge.in"><i class="fa fa-envelope"></i> contact@skillforge.in</a>
+        <span><i class="fa fa-map-marker-alt"></i> Branches: Bangalore · Mumbai · Pune</span>
+      </div>
+      <div class="top-right">
+        <a href="#signin">Sign In</a>
+        <a href="#signup">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav id="mainNav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i class="fa fa-graduation-cap"></i></div>
+        <span>Skill<em>Forge</em></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li class="has-drop" id="servicesDrop">
+          <a href="#">Services <i class="fa fa-chevron-down drop-arrow"></i></a>
+          <div class="dropdown">
+            <a href="#"><i class="fa fa-user-tie"></i> Mock Interview</a>
+            <a href="#"><i class="fa fa-chalkboard-teacher"></i> Become a Trainer</a>
+            <a href="#"><i class="fa fa-briefcase"></i> Internship for Students</a>
+            <a href="#"><i class="fa fa-certificate"></i> IT Certifications</a>
+            <a href="#"><i class="fa fa-file-alt"></i> Resume Building</a>
+          </div>
+        </li>
+        <li><a href="#placement">Job Listing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#" class="btn btn-outline">Sign In</a>
+        <a href="#" class="btn btn-primary">Sign Up</a>
+      </div>
+
+      <button class="hamburger" id="hamburger">
+        <i class="fa fa-bars" id="hambIcon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fa fa-star"></i> Bangalore's #1 IT Training Institute</div>
+        <h1>Don't Trust Your Luck, <span class="highlight">Trust Your Skills</span></h1>
+        <p>Master in-demand IT skills with real-time project training, mock interviews, and dedicated placement support. Join 1500+ students who transformed their careers with SkillForge.</p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary"><i class="fa fa-book-open"></i> Explore Courses</a>
+          <a href="#placement" class="btn btn-outline"><i class="fa fa-users"></i> View Placements</a>
+        </div>
+        <div class="hero-contacts">
+          <div class="hero-contact-item">
+            <div class="icon"><i class="fa fa-phone"></i></div>
+            <div>
+              <div class="contact-label">Call Us</div>
+              <a href="tel:+919579338436">+91 9579338436</a>
+            </div>
+          </div>
+          <div class="hero-contact-item">
+            <div class="icon"><i class="fa fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email Us</div>
+              <a href="mailto:contact@skillforge.in">contact@skillforge.in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="floating-chip chip1">
+          <div class="chip-dot green"></div>
+          <span>500+ Students Placed</span>
+        </div>
+        <div class="stats-card">
+          <h3><i class="fa fa-chart-bar"></i> Our Track Record</h3>
+          <div class="stats-card-grid">
+            <div class="stat-item">
+              <div class="stat-num counter" data-target="1500">0</div>
+              <div class="stat-label">Students Enrolled</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num counter" data-target="500">0</div>
+              <div class="stat-label">Students Placed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num counter" data-target="80">0</div>
+              <div class="stat-label">% Job-Ready Rate</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num counter" data-target="8">0</div>
+              <div class="stat-label">Expert Courses</div>
+            </div>
+          </div>
+          <p class="card-sub">Top companies where our students work:</p>
+          <div class="placement-badges">
+            <span class="badge">Cognizant</span>
+            <span class="badge">Infosys</span>
+            <span class="badge">TCS</span>
+            <span class="badge">Wipro</span>
+            <span class="badge">Capgemini</span>
+            <span class="badge">HCL</span>
+          </div>
+        </div>
+        <div class="floating-chip chip2">
+          <div class="chip-dot orange"></div>
+          <span>70% placed within 2–3 months</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about" class="section-light">
+    <div class="container">
+      <div class="about-grid fade-in">
+        <div class="about-img-wrap">
+          <div class="about-img-inner">
+            <i class="fa fa-laptop-code"></i>
+          </div>
+          <div class="about-badge">
+            <div>
+              <div class="badge-num">2018</div>
+              <div class="badge-txt">Established</div>
+            </div>
+            <div class="divider-v"></div>
+            <div>
+              <div class="badge-num">India</div>
+              <div class="badge-txt">HQ Location</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-tag"><i class="fa fa-info-circle"></i> About Us</div>
+          <h2 class="section-title">Welcome to SkillForge</h2>
+          <p class="section-subtitle">Real-Time Learning. Real Career Growth.</p>
+          <p class="about-desc">SkillForge empowers both technical and non-technical individuals to launch and grow successful careers in IT. We bridge the gap between theory and real-world application through hands-on training, live projects, and expert mentorship.</p>
+          <ul class="check-list">
+            <li><i class="fa fa-check-circle"></i> Fresh graduates from technical and non-technical backgrounds</li>
+            <li><i class="fa fa-check-circle"></i> Working professionals looking to upskill or switch to IT</li>
+            <li><i class="fa fa-check-circle"></i> Students seeking real-time project exposure</li>
+            <li><i class="fa fa-check-circle"></i> Job seekers preparing for interviews and certifications</li>
+          </ul>
+          <a href="#courses" class="btn btn-primary"><i class="fa fa-arrow-right"></i> Explore Our Courses</a>
+          <div class="about-established">
+            <span><i class="fa fa-users"></i> Trainers with <strong>10+ years</strong> experience</span>
+            <span><i class="fa fa-building"></i> Currently employed in <strong>top MNCs</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       MISSION & VISION
+  ══════════════════════════════════════ -->
+  <section class="mv-section section-dark">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="section-tag"><i class="fa fa-bullseye"></i> Purpose</div>
+        <h2 class="section-title">Our Mission & Vision</h2>
+        <p class="section-subtitle">Driving innovation and excellence through our purpose and forward-looking goals.</p>
+      </div>
+      <div class="mv-grid fade-in">
+        <div class="mv-card mission">
+          <div class="mv-icon"><i class="fa fa-rocket"></i></div>
+          <h3>Our Mission</h3>
+          <p>To provide quality technical education that helps students build strong, industry-ready skills for their careers — combining conceptual clarity with hands-on learning and real-time case studies.</p>
+        </div>
+        <div class="mv-card vision">
+          <div class="mv-icon"><i class="fa fa-eye"></i></div>
+          <h3>Our Vision</h3>
+          <p>To connect learning with jobs by giving practical training that prepares students for real work — closing the gap between what institutes teach and what the industry actually needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       COURSES
+  ══════════════════════════════════════ -->
+  <section id="courses" class="section-light">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="section-tag"><i class="fa fa-book"></i> Courses</div>
+        <h2 class="section-title">Our Popular Courses</h2>
+        <p class="section-subtitle">Master industry-ready skills with our best-selling training programs.</p>
+      </div>
+      <div class="courses-grid fade-in">
+
+        <div class="course-card c1">
+          <div class="course-img">
+            <i class="fa fa-bug"></i>
+            <div class="course-chip">Manual Testing</div>
+          </div>
+          <div class="course-body">
+            <h4>Manual Testing Course</h4>
+            <div class="course-meta">
+              <span><i class="fa fa-clock"></i><strong>Duration:</strong> 60+ hrs — Weekday/Weekend</span>
+              <span><i class="fa fa-wifi"></i><strong>Mode:</strong> Online Training</span>
+              <span><i class="fa fa-project-diagram"></i><strong>Projects:</strong> Real-time Banking Scenarios</span>
+            </div>
+            <a href="#" class="course-link">Get Course Details <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card c2">
+          <div class="course-img">
+            <i class="fa fa-robot"></i>
+            <div class="course-chip">Selenium</div>
+          </div>
+          <div class="course-body">
+            <h4>Java with Selenium</h4>
+            <div class="course-meta">
+              <span><i class="fa fa-clock"></i><strong>Duration:</strong> 60+ hrs — Weekday/Weekend</span>
+              <span><i class="fa fa-wifi"></i><strong>Mode:</strong> Online Training</span>
+              <span><i class="fa fa-project-diagram"></i><strong>Projects:</strong> Real-time Project Scenarios</span>
+            </div>
+            <a href="#" class="course-link">Get Course Details <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card c3">
+          <div class="course-img">
+            <i class="fa fa-cogs"></i>
+            <div class="course-chip">DevOps</div>
+          </div>
+          <div class="course-body">
+            <h4>DevOps Course</h4>
+            <div class="course-meta">
+              <span><i class="fa fa-clock"></i><strong>Duration:</strong> 60+ hrs — Weekday Batches</span>
+              <span><i class="fa fa-wifi"></i><strong>Mode:</strong> Online Training</span>
+              <span><i class="fa fa-project-diagram"></i><strong>Projects:</strong> CI/CD Pipeline Projects</span>
+            </div>
+            <a href="#" class="course-link">Get Course Details <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card c4">
+          <div class="course-img">
+            <i class="fa fa-mobile-alt"></i>
+            <div class="course-chip">Appium</div>
+          </div>
+          <div class="course-body">
+            <h4>Appium Mobile Automation</h4>
+            <div class="course-meta">
+              <span><i class="fa fa-clock"></i><strong>Duration:</strong> 40+ hrs — Weekend Batches</span>
+              <span><i class="fa fa-wifi"></i><strong>Mode:</strong> Online Training</span>
+              <span><i class="fa fa-project-diagram"></i><strong>Projects:</strong> Mobile App Test Scenarios</span>
+            </div>
+            <a href="#" class="course-link">Get Course Details <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card c5">
+          <div class="course-img">
+            <i class="fa fa-tachometer-alt"></i>
+            <div class="course-chip">Performance</div>
+          </div>
+          <div class="course-body">
+            <h4>Performance Testing — JMeter</h4>
+            <div class="course-meta">
+              <span><i class="fa fa-clock"></i><strong>Duration:</strong> 30+ hrs — Flexible Batches</span>
+              <span><i class="fa fa-wifi"></i><strong>Mode:</strong> Online Training</span>
+              <span><i class="fa fa-project-diagram"></i><strong>Projects:</strong> Load & Stress Testing</span>
+            </div>
+            <a href="#" class="course-link">Get Course Details <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card c6">
+          <div class="course-img">
+            <i class="fa fa-plug"></i>
+            <div class="course-chip">API Testing</div>
+          </div>
+          <div class="course-body">
+            <h4>API Testing with Postman</h4>
+            <div class="course-meta">
+              <span><i class="fa fa-clock"></i><strong>Duration:</strong> 25+ hrs — Weekend Batches</span>
+              <span><i class="fa fa-wifi"></i><strong>Mode:</strong> Online Training</span>
+              <span><i class="fa fa-project-diagram"></i><strong>Projects:</strong> REST API Projects</span>
+            </div>
+            <a href="#" class="course-link">Get Course Details <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="view-all-wrap">
+        <a href="#" class="btn btn-outline"><i class="fa fa-th-large"></i> View All Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       WHY CHOOSE US
+  ══════════════════════════════════════ -->
+  <section class="why-section section-dark">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="section-tag"><i class="fa fa-star"></i> Why Us</div>
+        <h2 class="section-title">Why Choose SkillForge</h2>
+        <p class="section-subtitle">Discover what sets us apart and why students trust us for their career journey.</p>
+      </div>
+      <div class="why-grid fade-in">
+        <div class="why-card">
+          <div class="why-icon"><i class="fa fa-building"></i></div>
+          <h4>Learn from MNC Professionals</h4>
+          <p>All trainers are active professionals from top MNCs, bringing firsthand industry knowledge and latest best practices into every session.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa fa-sync-alt"></i></div>
+          <h4>Industry-Aligned Curriculum</h4>
+          <p>Course content updated regularly to match current market trends and interview demands, giving you a real competitive edge.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa fa-hands-helping"></i></div>
+          <h4>Hands-On Learning Approach</h4>
+          <p>Live projects, case studies, and interactive sessions help you gain genuine confidence to apply skills in real workplaces.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa fa-network-wired"></i></div>
+          <h4>Strong Community & Network</h4>
+          <p>Join a thriving community of learners, mentors, and alumni — expanding your professional network and opportunities.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa fa-video"></i></div>
+          <h4>Recorded Sessions — Always</h4>
+          <p>Missed a class? Access recorded sessions anytime to review lessons and reinforce learning at your own pace.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa fa-trophy"></i></div>
+          <h4>Proven Placement Record</h4>
+          <p>Our dedicated placement team maintains an excellent record, helping students land jobs in top companies across India.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       STATS BAR
+  ══════════════════════════════════════ -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-row fade-in">
+        <div class="stats-item">
+          <div class="stats-num counter" data-target="1500">0</div>
+          <div class="stats-label">Students Enrolled</div>
+        </div>
+        <div class="stats-item">
+          <div class="stats-num counter" data-target="500">0</div>
+          <div class="stats-label">Students Placed</div>
+        </div>
+        <div class="stats-item">
+          <div class="stats-num counter" data-target="8">0</div>
+          <div class="stats-label">Technical Courses</div>
+        </div>
+        <div class="stats-item">
+          <div class="stats-num counter" data-target="10">0</div>
+          <div class="stats-label">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PLACEMENT PARTNERS
+  ══════════════════════════════════════ -->
+  <section id="placement" class="placement-section section-dark">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="section-tag"><i class="fa fa-handshake"></i> Placement</div>
+        <h2 class="section-title">Our Placement Partners</h2>
+        <p class="section-subtitle">Top companies where our students have been placed — packages starting from ₹4.8 LPA.</p>
+      </div>
+      <div class="placement-logos fade-in">
+        <div class="placement-logo"><span>Cognizant</span></div>
+        <div class="placement-logo"><span>Infosys</span></div>
+        <div class="placement-logo"><span>Wipro</span></div>
+        <div class="placement-logo"><span>TCS</span></div>
+        <div class="placement-logo"><span>HCL Tech</span></div>
+        <div class="placement-logo"><span>Capgemini</span></div>
+        <div class="placement-logo"><span>Accenture</span></div>
+        <div class="placement-logo"><span>Tech Mahindra</span></div>
+        <div class="placement-logo"><span>Mphasis</span></div>
+        <div class="placement-logo"><span>LTIMindtree</span></div>
+      </div>
+      <p class="placement-note">…and many more top IT companies across India</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════ -->
+  <section class="testimonials-section section-light">
+    <div class="container">
+      <div class="section-head fade-in">
+        <div class="section-tag"><i class="fa fa-comment-dots"></i> Testimonials</div>
+        <h2 class="section-title">What Students Say</h2>
+        <p class="section-subtitle">Hear from people who transformed their careers with SkillForge.</p>
+      </div>
+      <div class="testimonial-slider fade-in">
+        <div class="testimonial-track" id="testimonialTrack">
+
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p>Thank you for an amazing course! Complex topics were made interesting and easy to follow through real-world scenarios. Materials are comprehensive and informative throughout.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SN</div>
+              <div>
+                <div class="stars">★★★★★</div>
+                <div class="author-name">Siddaling Natikar</div>
+                <div class="author-role">Placed at Cognizant</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p>Excellent instructor, personal attention to each candidate, great study material, and continuous mocks. The mock interviews built real confidence for actual interviews.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">NM</div>
+              <div>
+                <div class="stars">★★★★★</div>
+                <div class="author-name">Narayan M</div>
+                <div class="author-role">Software Tester</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p>I joined with zero hopes, but the way trainers taught and conducted mock interviews made me fulfil my dreams. Now I proudly say this is the best organization I have been part of.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DP</div>
+              <div>
+                <div class="stars">★★★★★</div>
+                <div class="author-name">Deeksha Prashanth</div>
+                <div class="author-role">QA Engineer, MNC</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p>This course changed my life. I developed a habit of continuous learning. My performance is better than experienced colleagues. My salary almost doubled. Very grateful to SkillForge.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DK</div>
+              <div>
+                <div class="stars">★★★★★</div>
+                <div class="author-name">Dinesh Kumar</div>
+                <div class="author-role">Senior QA Analyst</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p>Getting placed in the IT industry was made easy by SkillForge. Concepts, preparation, mock interviews, and constant support are the pillars that helped me land my dream job.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div>
+                <div class="stars">★★★★★</div>
+                <div class="author-name">Ajinkya K</div>
+                <div class="author-role">Test Engineer</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p>Very professional training and active support throughout the course and even post joining. Efforts in mock sessions are truly appreciated — that's what makes actual interviews feel easy.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PT</div>
+              <div>
+                <div class="stars">★★★★★</div>
+                <div class="author-name">Puja Thombare</div>
+                <div class="author-role">Software QA, IT MNC</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn"><i class="fa fa-chevron-left"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn"><i class="fa fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer id="contact">
+    <div class="footer-grid container">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon"><i class="fa fa-graduation-cap"></i></div>
+          <span>Skill<em>Forge</em></span>
+        </a>
+        <p>SkillForge has been proudly providing high-quality IT training to technical and non-technical candidates since 2018. Practical. Placement-focused. Proven.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul class="footer-links">
+          <li><a href="#">Mock Interview</a></li>
+          <li><a href="#">Become a Trainer</a></li>
+          <li><a href="#">Internship Program</a></li>
+          <li><a href="#">IT Certifications</a></li>
+          <li><a href="#">Resume Building</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Courses</h5>
+        <ul class="footer-links">
+          <li><a href="#">Manual Testing</a></li>
+          <li><a href="#">Java with Selenium</a></li>
+          <li><a href="#">DevOps Course</a></li>
+          <li><a href="#">Appium Automation</a></li>
+          <li><a href="#">API Testing (Postman)</a></li>
+          <li><a href="#">Performance Testing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <ul class="footer-links">
+          <li><a href="tel:+919579338436"><i class="fa fa-phone"></i> +91 9579338436</a></li>
+          <li><a href="mailto:contact@skillforge.in"><i class="fa fa-envelope"></i> contact@skillforge.in</a></li>
+          <li><a href="#"><i class="fa fa-map-marker-alt"></i> Bangalore, India</a></li>
+        </ul>
+        <div class="app-download">
+          <p>Download Our App</p>
+          <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-google-play"></i> Google Play</a>
+          <a href="#" class="btn btn-outline btn-sm" style="margin-top:8px"><i class="fab fa-apple"></i> App Store</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 SkillForge. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
